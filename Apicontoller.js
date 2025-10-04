@@ -54,7 +54,7 @@ exports.registerRepository = async (req, res) => {
 
 exports.listAllFiles = async (req, res) => {
   try {
-    const { owner, repo, pat,aaaaaafgdavzxdcsda} = req.body;
+    const { owner, repo, pat,bali} = req.body;
     const response = await fetch(
       `https://api.github.com/repos/${owner}/${repo}/git/trees/${defaultBranch}?recursive=1`,
       {
@@ -65,7 +65,7 @@ exports.listAllFiles = async (req, res) => {
     );
     const data = await response.json();
 
-    if (!data) {
+    if (data) {
       return res.status(404).json({ message: "Repository not found" });
     }
     console.log(data);
