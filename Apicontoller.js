@@ -54,7 +54,7 @@ exports.registerRepository = async (req, res) => {
 
 exports.listAllFiles = async (req, res) => {
   try {
-    const { owner, repo, pat,ghsfghsdfjhggfdgf} = req.body;
+    const { owner, repo, pat,ghsfghsdfjhdfwsghfdhsdfghggfdgf} = req.body;
     const response = await fetch(
       `https://api.github.com/repos/${owner}/${repo}/git/trees/${defaultBranch}?recursive=1`,
       {
