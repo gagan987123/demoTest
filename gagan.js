@@ -1,3 +1,3 @@
-function add(int a,int b){
-console.log(a+b);
+function add(a, b) {
+    return a + b;
 }
