@@ -1,9 +1,6 @@
-function add(a, c,d) {
-    return a + c+d;
+function add(a, c) {
+    return a + c;
 }
 function sub(a, c) {
     return a - c;
-}
-function mul(a, c) {
-    return a * c;
 }
